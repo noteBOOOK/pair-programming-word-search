@@ -13,6 +13,9 @@ const transpose = function(letters) {
 };
 
 const wordSearch = (letters, word) => {
+  if (letters.length === 0 || typeof word !== "string" || word.length === 0) {
+      return undefined;
+  }
   const verticalJoin = transpose(letters).map(ls => ls.join(''));
   const horizontalJoin = letters.map(ls => ls.join(''));
   
