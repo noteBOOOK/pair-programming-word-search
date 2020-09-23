@@ -26,7 +26,6 @@ const transpose = function(letters) {
       }
     
     }
-    console.log("Transpose result: ", result);
     return result;
 };
 
